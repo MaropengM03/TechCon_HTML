@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header, footer { background: #003366; color: #fff; padding: 1em 0; text-align: center; }
+        nav { margin: 1em 0; }
+        nav a { color: #003366; text-decoration: none; margin: 0 1em; font-weight: bold; }
+        main { max-width: 900px; margin: 2em auto; padding: 1em; }
+        .contact-info, .contact-form { margin-bottom: 2em; }
+        .contact-info a { color: #003366; text-decoration: underline; }
+        .social-links a { display: inline-block; margin-right: 1em; color: #003366; }
+        .social-links a:hover { text-decoration: underline; }
+        .map-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 2em;
+        }
+        .map-responsive iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%; border: 0;
+        }
+        form { background: #f5faff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
+        label { display: block; margin-top: 1em; margin-bottom: 0.3em; font-weight: 500; }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; padding: 0.5em; border: 1px solid #ccc; border-radius: 4px;
+            font-size: 1em;
+        }
+        textarea { min-height: 100px; }
+        button[type="submit"] {
+            background: #003366; color: #fff; border: none; padding: 0.75em 2em;
+            border-radius: 4px; font-size: 1em; margin-top: 1em; cursor: pointer;
+        }
+        button[type="submit"]:hover { background: #0055a5; }
+        @media (max-width: 600px) {
+            main { padding: 0.5em; }
+            form { padding: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+            <div class="social-links">
+                <span>Follow us:</span>
+                <a href="https://twitter.com/example" target="_blank">Twitter</a>
+                <a href="https://facebook.com/example" target="_blank">Facebook</a>
+                <a href="https://linkedin.com/company/example" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+        <section class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086267296078!2d-122.41941548468104!3d37.77492977975965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5e7c9f33%3A0x3b2b6d8f6c0f9f8c!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1629392012345!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Conference Venue Map"></iframe>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 TechCon. All rights reserved.
+    </footer>
+</body>
+</html>
